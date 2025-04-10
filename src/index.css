@@ -1,0 +1,42 @@
+:root { /* configurações padrão aplicadas a todo o projeto */
+  font-family: 'Poppins'; /* é o tipo de fonte */
+  line-height: 1.5; /* dá um bom espaçamento entre linhas */
+  font-weight: 400; /* define a espessura da fonte como normal */
+
+  color-scheme: light dark; /* ajuda o navegador a saber que o site pode se adaptar a temas claro/escuro */
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  text-rendering: optimizeLegibility;  /* melhora a legibilidade do texto em alguns navegadores */
+}
+
+body {  /* define o corpo da página */
+  margin: 0; /* tira qualquer margem padrão do navegador */
+  display: flex; /* para facilitar o alinhamento */
+  place-items: center; /* alinha os itens no centro vertical e horizontal */
+  min-width: 320px; /*define uma largura mínima pro site */
+  min-height: 100vh;/* ocupa 100% da altura da tela */
+}
+
+h1 { /* estiliza todos os títulos h1 */
+  font-size: 3.2em; /* aumenta o tamanho da fonte */
+  line-height: 1.1; /* define o espaçamento entre linhas do título */
+}
+
+button { /* estilo padrão para todos os botões */
+  border-radius: 8px; /* deixa os cantos arredondados */
+  border: 1px solid transparent; /* borda invisível só pra manter a estrutura */
+  padding: 0.6em 1.2em; /* espaço interno do botão (vertical e horizontal) */
+  font-size: 1em; /* tamanho da fonte padrão */
+  font-weight: 500; /* um pouco mais forte que o normal */
+  font-family: inherit; /* herda a mesma fonte do que estiver ao redor */
+  background-color: #1a1a1a; /* cor de fundo escura pro botão */
+  cursor: pointer; /* muda o cursor pro formato de mãozinha quando passar o mouse */
+  transition: border-color 0.25s; /* faz a borda mudar suavemente quando interagir */
+}
+
+@media (prefers-color-scheme: light) { /* quando o usuário estiver no modo claro*/
+  :root {
+    color: #213547; /* cor do texto em modo claro */
+  }
+}

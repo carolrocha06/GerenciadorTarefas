@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif; /* define a fonte do texto do site */
+    background-color: rgb(240, 218, 245); /* define uma cor de fundo suave e clarinha pro fundo do site */
+    text-align: center; /* centraliza tudo no meio da tela */
+  }
+  
+  input {
+    padding: 8px; /* define o tamanho interno da caixinha de digitar */
+    margin: 10px; /* espaçamento por fora da caixinha */
+    border-radius: 5px; /* deixa os cantinhos arredondados */
+    border: 3px solid rgb(10, 230, 234); /* borda azulzinha, um pouco grossa, destacando bem a caixinha */
+  }
+  
+  button {
+    background-color: deeppink; 
+    color: white; /* texto branco no botão */
+    padding: 8px 12px; /* espaço interno do botão — altura e largura */
+    margin-left: 5px; /* dá um espacinho entre o botão e o input ao lado */
+    cursor: pointer; /* muda o cursor pra “mãozinha” quando passa por cima */
+    border-radius: 5px; /* deixa o botão com cantinhos arredondados */
+  }
+  
+  ul {
+    list-style: none; /* tira as bolinhas da lista */
+    padding: 0; /* remove o espaço interno da lista */
+  }
+  
+  li {
+    background: white; /* fundo branco para cada item da lista */
+    margin: 3px auto; /* espacinho entre os itens da lista e centraliza */
+    padding: 8px; /* espaço interno pra não ficar apertado */
+    border-radius: 10px; /* deixa cada tarefa com bordas arredondadas */
+    display: flex; /* organiza os elementos da tarefa (texto e botões) na horizontal */
+    justify-content: space-between; /* separa o texto da tarefa dos botões */
+    align-items: center; /* alinha tudo verticalmente no centro */
+    min-width: 300px; /* define uma largura mínima para a tarefa */
+  }
+  
+  .concluidas {
+    text-decoration: line-through; /* risca o texto da tarefa quando marca como concluída */
+    color: gray; /* texto riscado fica em cinza pra mostrar que tá feito */
+  }
+  

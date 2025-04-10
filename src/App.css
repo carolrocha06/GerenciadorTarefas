@@ -1,0 +1,17 @@
+ /* observação: ctrl + ; vai comentar todo o texto selecionado */
+ 
+ #root { /* estilizando o container (como se fosse um retangulo) principal */
+  max-width: 1450px; /*define a largura máxima */ 
+  min-height: 350px; /* é a altura mínima */
+  margin: 0 auto; /* centraliza horizontal e vertical */
+  padding: 2rem; /* um pouco de espaçamento interno, nao deixa colada */
+  text-align: center; /* alinha o texto no centro */
+  font-family: 'Poppins'; /* aplica uma fonte bonitinha e diferente no texto */
+  background: linear-gradient( /* deixa o degrade no fundo */
+    90deg, /* define a direção do gradiente (horizontal) */
+    rgb(255, 180, 255) 0%, /* cor inicial do gradiente */
+    rgb(172, 230, 249) 100% /* cor final do gradiente */
+  );
+  border-radius: 20px; /* deixa as bordas arredondadas */
+  border: 10px solid purple;  /* borda roxa e bem marcante em volta do container */
+} 
