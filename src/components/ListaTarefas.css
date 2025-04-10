@@ -14,11 +14,15 @@ body {
   button {
     background-color: deeppink; 
     color: white; /* texto branco no botão */
-    padding: 8px 12px; /* espaço interno do botão — altura e largura */
     margin-left: 5px; /* dá um espacinho entre o botão e o input ao lado */
     cursor: pointer; /* muda o cursor pra “mãozinha” quando passa por cima */
     border-radius: 5px; /* deixa o botão com cantinhos arredondados */
   }
+
+  button:active { /* ao clicar no botao */
+    transform: scale(0.95); /* reduz um pouco o tamanho */
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.3); /* dá um efeito de afundado */
+}
   
   ul {
     list-style: none; /* tira as bolinhas da lista */
